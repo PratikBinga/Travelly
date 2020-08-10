@@ -1,0 +1,207 @@
+/* GLobal styles */
+/* 1 rem is 10px */
+html{
+    font-size: 62.5%
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+h1{
+    font-size: 2.6rem;
+    
+}
+h2{
+    font-size: 4.8rem;
+}
+h3{
+    font-size: 2.6rem;
+}
+h4,h5{
+  font-size: 2.8rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main-Header{
+    background: #131c27;
+    color: white;
+}
+    
+li,label,button,input,p{
+    font-size:2rem;
+    list-style: none;
+}
+
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 10vh;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+}
+
+.logo-Header{
+flex: 1 1 40rem;
+font-family: 'Pattaya', sans-serif;
+}
+
+nav ul {
+flex: 1 1 40rem;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.hero-Section{
+    background:linear-gradient( rgba(0,0,0,0.7),transparent), url(./images/travel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    
+}
+
+section button{
+    margin:2rem;
+    padding: 2rem 4rem;
+    border: none;
+    background-color: cyan;
+    cursor: pointer;
+}
+
+
+#locations{
+    background: url(./images/new-york-page.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.locations-head{
+    width: 90vw;
+    margin: auto;
+}
+
+.locations-head h2 {
+    padding: 2rem;
+    text-decoration-line: underline;
+}
+.locations-head h3{
+    padding: 1.8rem;
+}
+.cloud{
+    /* min-width: 30rem; */
+    position: absolute;
+    right: 0%;
+    top : 0%;
+    /* transform: translate(-10%,10%);
+    transition: all 3s ease-in-out infinite; */
+}
+
+.cloud1{
+    animation: cloudAnimation 3s infinite  alternate ease-in-out;
+}
+
+.cloud2{
+z-index: -2;
+opacity: 0.5;
+top: 20%;
+animation: cloudAnimation 3.5s infinite  alternate ease-in-out;
+} 
+
+@keyframes cloudAnimation {
+    from {
+      transform: translate(10%, -10%);
+    }
+    to {
+      transform: translate(0%, 0%);
+    }
+  }
+
+  footer{
+    background: rgba(19, 28, 39, 1);
+    color: white;
+
+  }
+  .footer-wrapper{
+      min-height: 10vh;
+      padding: 2rem;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      /* justify-content: center; */
+  }
+
+  footer ul {
+flex: 1 1 40rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+  }
+  footer h5{
+      color: white;
+      flex: 1 1 40rem;
+      /* font-size: 2rem; */
+  }
+
+/* mobile display */
+@media screen and (max-width:932px){
+
+    html{
+        font-size: 45%;
+    }
+    /* nav{
+        text-align: center;
+    } */
+    .logo-Header{
+        padding: 2rem;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
